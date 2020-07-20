@@ -13,6 +13,7 @@ env:
 before_install:
 # gox simplifies building for multiple architectures
 - go get github.com/mitchellh/gox
+- apt-get install libb2-dev
 script:
 - go build ./...
 - go test ./...
